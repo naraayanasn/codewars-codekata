@@ -1,0 +1,8 @@
+def spin_words(string):
+    new=[]
+    for word in string.split():
+        if len(word)>=5:
+            new.append(word[::-1])
+        else:
+            new.append(word)
+    return ' '.join(new)
