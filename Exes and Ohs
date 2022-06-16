@@ -1,0 +1,3 @@
+def xo(N):
+    N = N.lower()
+    return N.count('x') == N.count('o')
