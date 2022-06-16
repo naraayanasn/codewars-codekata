@@ -1,0 +1,8 @@
+def narcissistic( val ):
+    n_o_d = len(str(val))
+    s= 0
+
+    for digit in str(val):
+        s += int(digit)**n_o_d
+        
+    return s == val
