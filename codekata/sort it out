@@ -1,0 +1,14 @@
+
+punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''' '
+my_str = "hii kpit employee!!!, stay safe ---and doing well work from home ."
+no_punct = ""
+for char in my_str:
+   if char not in punctuations:
+       no_punct = no_punct + char
+def sort(my_str):
+    if not my_str:
+        return []
+    return (sort([x for x in my_str[1:] if x <  my_str[0]])
+            + [my_str[0]] +
+            sort([x for x in my_str[1:] if x >= my_str[0]]))
+print(''.join(sort(no_punct)))
