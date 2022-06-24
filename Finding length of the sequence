@@ -1,0 +1,7 @@
+def length_of_sequence(arr, n):
+    if arr.count(n) > 2 or arr.count(n) < 2:
+        return 0
+    _index = arr.index(n)
+    arr[_index] = 'dou'
+    _final = arr.index(n)
+    return _final - _index + 1
