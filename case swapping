@@ -1,0 +1,3 @@
+def swap(string_):
+    _string = ''.join([i.upper() if i.islower() else i.lower() for i in string_])
+    return _string
