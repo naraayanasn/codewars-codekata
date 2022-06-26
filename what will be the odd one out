@@ -1,0 +1,12 @@
+def odd_one_out(s):
+    chars = {}
+    for char in s:
+        if char in chars:
+            del chars[char]
+        else:
+            chars[char] = None
+    return list(chars.keys())
+
+
+
+
